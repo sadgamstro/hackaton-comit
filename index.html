@@ -7,39 +7,73 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Verificador de perfiles de Github</title>
   <link href="estilos-home.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-  <div id=formulario>
-    <h1> Verificador de perfiles de Github</h1>
-    <h2> Insertar nombre de usuario </h2>
+  <header>
 
-    <form>
-      Nombre de usuario: <br>
-      <input id="username" type="text"> <br>
-    </form>
+    <div class="container">
 
-    <button onclick="showUserData()">comenzar</button>
+      <div class="row">
+
+        <div class="col">
+
+          <div class="contenedor d-flex justify-content-center">
+              <h1> Verificador de perfiles de Github</h1>
+          </div>
+            
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+  <div class="container fondo">
+
+    <div class="row">
+
+      <div class="col">
+          <div id=formulario>
+            <div class="col"><h2> Insertar nombre de usuario </h2></div>
+              <h2> Insertar nombre de usuario </h2>
+          
+              <form>
+                Nombre de usuario: <br>
+                <input id="username" type="text"> <br>
+              </form>
+          
+              <button onclick="showUserData()">comenzar</button>
+            </div>
+          
+            <div id="ficha">
+              <h1 id="usuario"> </h1>
+          
+              <div id="imagen"></div>
+          
+          
+          
+              <p id="nombre">Nombre: </p>
+          
+              <p id="ubicacion">Ubicacion: </p>
+              <p>URL: <a href="" id="url"></a></p>
+              <p id="seguidores">Seguidores: </p>
+              <p>Repos_url: <a href="" id="repos"></a></p>
+      </div>
+
+    </div>
+
   </div>
-
-  <div id="ficha">
-    <h1 id="usuario"> </h1>
-
-    <div id="imagen"></div>
-
-
-
-    <p id="nombre">Nombre: </p>
-
-    <p id="ubicacion">Ubicacion: </p>
-    <p>URL: <a href="" id="url"></a></p>
-    <p id="seguidores">Seguidores: </p>
-    <p>Repos_url: <a href="" id="repos"></a></p>
+  
 
   </div>
   <script src="script.js"></script>
+  <script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
